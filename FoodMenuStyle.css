@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+body{
+   /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(Images/fmb.jpg); */
+}
+h1{
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+h2{
+    margin-left: 400px;
+    font-family: 'Acme', sans-serif;
+}
+img{
+    height: 250px;
+    width: 400px;
+    border-radius: 15px;
+    padding: 5px;
+}
+table{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+th{
+    padding: 10px 25px 10px 25px;
+    font-size: 24px;
+    background-color: chocolate;
+    margin-bottom: 10px;
+    font-family: 'Alegreya', serif;
+}
+td{
+    padding: 10px 25px 0 25px;
+    font-family: 'Cairo', sans-serif;
+}
+.item-name{
+    font-size: 24px;
+    
+}
+

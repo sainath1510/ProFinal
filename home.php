@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Taurus: Reaching Student</title>
+  <link rel="icon" href="Images/WORK 02.png">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <link rel="stylesheet" type="text/css" href="RegisterStyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="LoginStyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="float-panel.js"></script>
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="ViewBalance.html">View Balance</a>
+    <a href="FoodMenu.php">Menu</a>
+    <a href="#">Help</a>
+    <a href="#">Report Us</a>
+  </div>
+  <div class="top-menu">
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+    </div>
+
+    <img src="Images/WORK 02.png" alt="logo" class="logo">
+    <div class="topnav">
+      <a class="active" href="index.php"> <i class="fa fa-fw fa-home"></i>Home</a>
+      <a onclick="document.getElementById('form1').style.display='block'" style="cursor: pointer"><i
+          class="fa fa-fw fa-user"></i>Sign Up</a>
+      <a onclick="document.getElementById('form2').style.display='block'" style="cursor: pointer"><i
+          class="fa fa-sign-in"></i> Log In</a>
+      <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <a href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
+    </div>
+  </div>
+
+  <div class="slider-view">
+    <div class="container">
+      <div id="myCarousel" class="carousel slide text-center" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="Images/lidye.jpg" alt="" class="img1">
+            <div class="caption">
+              <h1>TAURUS</h1>
+              <h2>Reaching You Faster</h2>
+            </div>
+
+          </div>
+          <div class="item">
+            <img src="Images/paula-vermeulen.jpg" alt="">
+            <div class="tell-them">
+              <h2>Fedup by standing in queue..?</h2>
+              <h3>Got frustated with Canteen Billing..?</h3>
+              <p>It's time to make things easier!!</p>
+            </div>
+
+          </div>
+          <div class="item">
+            <img src="Images/jay-wennington.jpg" alt="">
+            <div class="book-order">
+              <a href="#food-menu" class="btn btn-primary">ORDER NOW</a>
+            </div>
+          </div>
+
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="options-menu container-fluid" id="food-menu">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="panel panel-default text-center ">
+          <div class="panel-heading">
+            <h2>Tiffins</h2>
+          </div>
+          <div class="panel-body">
+            <img src="Images/tiffins.jpg" alt="Tiffins" class="tiffins" >
+          </div>
+          <div class="panel-footer">
+            <a href="FoodMenu.php" class="btn btn-primary">Order Now</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-sm-6">
+        <div class="panel panel-default text-center ">
+          <div class="panel-heading">
+            <h2>Lunch</h2>
+          </div>
+          <div class="panel-body">
+            <img src="Images/lunch.jpg" alt="lunch" class="lunch">
+          </div>
+          <div class="panel-footer">
+            <a href="FoodMenu.php #Lunch" class="btn btn-primary">Order Now</a>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div id="form1" class="modal">
+
+    <form class="modal-content animate" method="POST" action="Send_Data.php">
+      <h1>Sign Up</h1>
+      <span onclick="document.getElementById('form1').style.display='none'" class="close"
+        title="Close Modal">&times;</span>
+      <div class="input-icons">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" name="Username" placeholder="Enter your Name">
+      </div>
+      <div class="input-icons">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" name="password" placeholder="Enter password">
+      </div>
+      <div class="input-icons">
+        <i class="fa fa-envelope icon"></i>
+        <input class="input-field" type="email" name="email" placeholder="Enter your email">
+      </div>
+      <div class="input-icons">
+        <i class="fa fa-mobile icon"></i>
+        <input class="input-field" type="tel" name="mbn" placeholder="Enter your Mobile No.">
+      </div>
+      <div class="input-icons">
+        <i class="fa fa-id-card icon"></i>
+        <input class="input-field" type="text" name="rollno" placeholder="Enter Roll Number">
+      </div>
+      <div class="input-icons">
+        <i class="fa fa-building icon"></i>
+        <label class="input-field">Choose Your Year</label><br>
+
+        <input type="radio" name="year" value="I" id="I">
+        <label for="I">I</label>
+
+        <input type="radio" name="year" value="II" id="II">
+        <label for="II">II</label>
+
+        <input type="radio" name="year" value="III" id="III">
+        <label for="III">III</label>
+
+        <input type="radio" name="year" value="IV" id="IV">
+        <label for="IV">IV</label>
+
+      </div>
+      <div class="input-icons">
+        <!-- <i class="fa fa-building icon"></i>  -->
+        <select class="input-field">
+          <option value="" disabled selected>Select your Branch</option>
+          <option value="Cse">Cse</option>
+          <option value="Ece">ECE</option>
+          <option value="It">It</option>
+          <option value="Mech">Mech</option>
+          <option value="Eee">Eee</option>
+          <option value="CIVIL">Civil</option>
+        </select>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+      </div>
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <div>
+        <input type="submit" value="Sign Up" class="btn btn-success btn-md " id="submit-btn">
+      </div>
+    </form>
+  </div>
+
+  <div id="form2" class="modal">
+    <form class="modal-content animate" method="POST" action="Send_Data.php">
+      <h1>Login In</h1>
+      <span onclick="document.getElementById('form2').style.display='none'" class="close"
+        title="Close Modal">&times;</span>
+      <div class="input-icons">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" name="Username" placeholder="Enter your Name">
+      </div>
+      <div class="input-icons">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" name="password" placeholder="Enter password">
+      </div>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label><br>
+      <a href="#">Forgot password</a>
+      <div>
+        <input type="submit" value="Log In" class="btn btn-success btn-md " id="submit-btn">
+      </div>
+
+    </form>
+
+  </div>
+
+  
+
+  <div class="contact-us" id="contact">
+    <div class="container-fluid bg-grey">
+      <h2 class="text-center">CONTACT</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <p>Contact us and we'll get back to you within 24 hours.</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span>Vardhaman College </p>
+          <p><span class="glyphicon glyphicon-phone"></span>+91 7708256211</p>
+          <p><span class="glyphicon glyphicon-envelope"></span> taurus_reach_us@gmail.com</p>
+        </div>
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="Script.js"></script>
+
+  <script>
+    var modal1 = document.getElementById('form1');
+    var modal2 = document.getElementById('form2');
+
+    window.onclick = function (event) {
+      if (event.target == modal1) {
+        modal.style.display = "none";
+      }
+      if (event.target == modal2) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
+
+</body>
+
+</html>
